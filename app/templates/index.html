@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Calculator App</h1>
+    
+        <div class="calculator-section">
+            <h2>Basic Calculator</h2>
+            <p>Perform basic arithmetic calculations.</p>
+            <a href="{{ url_for('basic_calc') }}">Go to Basic Calculator</a>
+        </div>
+
+        <div class="equation-solver-section">
+            <h2>Roots Calculator</h2>
+            <p>Find roots of Polynomial Functions.</p>
+            <a href="{{ url_for('equation_solver') }}">Go to Roots Calculator</a>
+        </div>
+        
+    </div>
+
+</body>
+</html>

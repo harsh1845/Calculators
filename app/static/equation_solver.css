@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Calculator', sans-serif;
+    font-size: 24px;
+    color: #333;
+    background-image: url('/static/background_equation.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#functionInput {
+    width: 80%;
+    height: 40px; 
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Calculator', sans-serif;
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ff4400ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+button:hover {
+    background-color: #d73900ec;
+    transform: scale(1.05);
+}
+
+#result-container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#result {
+    height: 40px; 
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Calculator', sans-serif;
+    color: #333;
+}

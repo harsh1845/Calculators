@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Calculator', sans-serif;
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator {
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 24px;
+    font-family: 'Calculator', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+        "clear operator operator calculate"
+        "seven eight nine divide"
+        "four five six multiply"
+        "one two three subtract"
+        "zero decimal equal equal";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+button.calculate {
+    grid-row: span 2;
+    height: 160px;
+}
+
+
+button {
+    width: 100%;
+    height: 80px; 
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease; 
+}
+
+button:hover {
+    background-color: #e0e0e0; 
+    transform: scale(1.05); 
+}
+
+button.operator, button.calculate {
+    background-color: #fff; 
+    color: #333; 
+    border: 1px solid #ccc;
+}
+
+button.operator:hover, button.calculate:hover {
+    background-color: #e0e0e0; 
+    transform: scale(1.05); 
+}
